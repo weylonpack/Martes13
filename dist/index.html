@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nave sobre Marte</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/phaser@3.80.1/dist/phaser.min.js"></script>
+    <!-- 1. Add Babel Standalone for in-browser transpilation -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        background-color: #1a202c; /* Equivalent to slate-800 */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      }
+      #root {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      canvas {
+        display: block;
+        margin: auto;
+      }
+    </style>
+
+<link rel="stylesheet" href="/index.css">
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@^19.1.0",
+    "react-dom/": "https://esm.sh/react-dom@^19.1.0/",
+    "react/": "https://esm.sh/react@^19.1.0/",
+    "phaser": "https://esm.sh/phaser@^3.90.0"
+  }
+}
+</script>
+  <script type="module" crossorigin src="/assets/index-Cd7dKzAD.js"></script>
+</head>
+  <body>
+    <div id="root"></div>
+    <!-- 2. Change the script type to "text/babel" and use a relative path -->
+    <!-- This requires the file structure in the repo to be correct (no extra sub-folders) -->
+    <script type="text/babel" data-type="module" src="./index.tsx"></script>
+</body>
+</html>
